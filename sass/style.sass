@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed|Oswald|Ubuntu')
+html,body
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  margin: 0
+  font-family: 'IBM Plex Sans Condensed', sans-serif
+
+  // font-family: 'Oswald', sans-serif
+  // font-family: 'IBM Plex Sans', sans-serif
+  // font-family: 'Ubuntu', sans-serif
+#particles-js
+  background-color: #e1eef6
+  background-image: url("../img/light_5.jpg")
+  background-blend-mode: multiply
+  // background-repeat: no-repeat
+  // background-attachment: fixed
+  background-position: center
+  background-size: cover
+  height: 100vh
+  width: 100vw
+  overflow: hidden
+  margin: 0
+.logo
+  display: flex
+  position: absolute
+  z-index: 2
+  font-weight: 400
+  text-transform: uppercase
+  font-size: 5rem
+  margin-top: -40px
+.neon
+  color: #fff
+  text-shadow: 0 0 5px #fff, 0 0 10px #40E0D0, 0 0 20px #fff, 0 0 40px #fff, 0 0px 80px #fff
+  animation: blink linear infinite 3s
+.fadeInUp
+  animation-delay: 0.5s
+.btn
+  display: flex
+  position: absolute
+  z-index: 2
+  margin-top: 240px
+  color: white
+  font-size: 1.5rem
+  flex-direction: row
+  animation-delay: 1s
+  .item
+    padding: 30px
+    a
+      text-decoration: none
+      color: white
+      text-shadow: 0 0 5px #fff, 0 0 8px #fff
+.footer
+    display: flex
+    position: absolute
+    z-index: 2
+    bottom: 10px
+    text-align: center
+    color: #ccc
+    font-family: 'IBM Plex Sans', sans-serif
+    font-size: 0.8rem
+@keyframes blink
+  // 78%
+  //   color: inherit
+  //   text-shadow: inherit
+  //
+  // 79%
+  //   color: #fff
+  //
+  // 80%
+  //   text-shadow: none
+  //
+  // 81%
+  //   color: inherit
+  //   text-shadow: inherit
+
+  82%
+    color: #fff
+    text-shadow: none
+
+  83%
+    color: inherit
+    text-shadow: inherit
+
+  92%
+    color: #fff
+    text-shadow: none
+
+  92.5%
+    color: inherit
+    text-shadow: inherit
+// table
+@media only screen and (min-width: 321px) and (max-width: 768px)
+  .btn
+    // flex-direction: column
+    font-size: 1.2rem
+    margin-top: 250px
+    .item
+      padding: 10px
+      text-align: center
+  .footer
+      bottom: 10px
+      font-size: 0.7rem
+@media only screen and (min-width: 0px) and (max-width: 400px)
+  .logo
+    display: flex
+    position: absolute
+    z-index: 2
+    font-weight: 400
+    text-transform: uppercase
+    font-size: 3rem
+    margin-top: -40px
+  .btn
+    flex-direction: column
+    margin-top: 250px
+    font-size: 1rem
+    .item
+      padding: 10px
+      text-align: center
+  .footer
+      bottom: 3px
+      font-size: 0.5rem
